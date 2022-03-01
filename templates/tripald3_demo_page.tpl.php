@@ -1001,8 +1001,38 @@ series of data.</p>
   };
 </script>
 
+
+
 <div id="tripald3-simpleHistogram" class="tripald3-diagram">
   <!-- Javascript will add a Simple Histogram, Title and Figure legend here -->
+</div>
+
+<!--------  SIMPLE SCATTERPLOT DIAGRAM ------------------------------------------------->
+<h3>Simple Scatterplot Diagram</h3>
+
+<script type = "text/javascript">
+  Drupal.behaviors.tripalD3demoScatter = {
+    attach: function(context, settings) {
+      var data = [[1, 6], [4, 8], [10,10], [6,8], [5,4],[6,5]];
+      tripalD3.drawFigure(data, {
+        "chartType" : "simplescatter",
+          "elementId": "tripald3-scatterplot",
+          "height": 500,
+          "width": 1000,
+          "keyPosition": "right",
+          "title": "",
+          "chartOptions": {
+            "xAxisTitle": "",
+            "yAxisTitle": "",
+          }
+
+        }
+      )
+    }
+  };
+</script>
+<div id="tripald3-scatterplot" class="tripald3-diagram">
+  <!-- Javascript will add a Simple Scatterplot, Title and Figure legend here -->
 </div>
 
 
