@@ -319,6 +319,9 @@ tripalD3 = {
     else if (options.chartType === 'simplescatter') {
       success = tripalD3.simplescatter.drawSimpleScatter(svg, data, options.chartOptions);
     }
+    else if (options.chartType === "scatterhori") {
+      success = tripalD3.scatterHorizontal.drawScatterHorizontal(svg,  data, options.chartOptions);
+    }
      
     // If drawing the chart failed with an error message,
     // remove the elements to clean up the canvas. The admin already
